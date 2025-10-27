@@ -1,0 +1,30 @@
+# Kasus 1
+
+Nama : Bilal Salya Ramadhan
+NIM : 312510178
+Kelas : TI.25.A.2
+
+## Persiapan
+
+Bahan bahan yang akan kita gunakan adalah :
+- Python (Jika belum ada, bisa unduh [disini](https://www.python.org/downloads/))
+- Git (Jika belum ada, bisa unduh [disini](https://git-scm.com/downloads))
+- GitHub (Pastikan sudah memiliki akun GitHub, kalau belum punya silakan [daftar](https://github.com/))
+
+## Pengerjaan
+
+harga_reguler = 50000
+harga_vip = 100000
+
+tipe_tiket = input("Masukkan tipe tiket (reguler/vip): ").lower()
+member = input("Apakah Anda memiliki kartu member? (ya/tidak): ").lower()
+
+harga = harga_vip if tipe_tiket == "vip" else harga_reguler
+
+diskon = 0.2 * harga if member == "ya" else 0
+
+total = harga - diskon
+
+print(f"\nTipe tiket: {tipe_tiket.capitalize()}")
+print(f"Status member: {'Ya' if member == 'ya' else 'Tidak'}")
+print(f"Total harga yang harus dibayar: Rp{int(total):,}")
