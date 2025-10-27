@@ -1,0 +1,38 @@
+# Latihan 2
+
+Nama : Bilal Salya Ramadhan
+NIM : 312510178
+Kelas : TI.25.A.2
+
+## Persiapan
+
+Bahan bahan yang akan kita gunakan adalah :
+- Python (Jika belum ada, bisa unduh [disini](https://www.python.org/downloads/))
+- Git (Jika belum ada, bisa unduh [disini](https://git-scm.com/downloads))
+- GitHub (Pastikan sudah memiliki akun GitHub, kalau belum punya silakan [daftar](https://github.com/))
+
+## Pengerjaan
+
+a = int(input("Masukkan bilangan A: "))
+b = int(input("Masukkan bilangan B: "))
+c = int(input("Masukkan bilangan C: "))
+
+=======================================
+
+try: ---------------------------------------|
+    a = int(input("Masukkan bilangan A: ")) |
+except ValueError:                          |
+    a = Masukkan bilangan A                 |
+try:                                        |
+    b = int(input("Masukkan bilangan B: ")) |
+except ValueError:                          |
+    b = 5Masukkan bilangan B                |
+try:                                        |
+    c = int(input("Masukkan bilangan C: ")) |
+except ValueError:                          |
+    c = Masukkan bilangan C ------------------ Disini, saya akan menggunakan kode yang berbeda. Jika kalian mengalami "Syntax Error: ValueError", saya menyarankan anda untuk menggunakan code ini
+
+if a+b == c or b+c == a or c+a == b: --|
+print("BENAR")                         |
+else:                                  |
+print("SALAH") --------------------------- disini, kalian akan mendapatkan "BENAR" jika penjumlahan a dan b menjadi c. Atau penjumlahan b dan c menjadi a. Dan sebagainya

@@ -1,0 +1,38 @@
+# Latihan 2
+
+Nama : Bilal Salya Ramadhan
+NIM : 312510178
+Kelas : TI.25.A.2
+
+## Persiapan
+
+Bahan bahan yang akan kita gunakan adalah :
+- Python (Jika belum ada, bisa unduh [disini](https://www.python.org/downloads/))
+- Git (Jika belum ada, bisa unduh [disini](https://git-scm.com/downloads))
+- GitHub (Pastikan sudah memiliki akun GitHub, kalau belum punya silakan [daftar](https://github.com/))
+
+## Pengerjaan
+
+gaji = int(input("Masukkan gaji:"))
+
+===========================================================
+
+try: --------------------------------|
+ gaji = int(input("Masukan gaji"))   |
+except ValueError:                   -- Disini, saya akan menggunakan kode yang berbeda. Jika kalian mengalami "Syntax Error: ValueError", saya menyarankan anda untuk menggunakan code ini
+ gaji = Masukan gaji ----------------|               
+berkeluarga = (False, True)[input("Sudah berkeluarga? (Y/T)") == "Y"] --|
+punya_rumah = (False, True)[input("Punya rumah? (Y/T)") == "Y"] ----------
+
+if gaji > 3000000:
+ print ("Gaji sudah diatas UMR")
+ if berkeluarga:
+  print ("Wajib ikutan asuransi dan menabung untuk pensiun")
+ else:
+  print ("Tidak perlu ikutan asuransi")
+ if punya_rumah:
+  print ("wajib bayar pajak rumah")
+ else:
+  print ("tidak wajib bayar pajak rumah")
+else: ------------------------ "else" disini disejajarkan dengan "if" paling atas, karena "else" disini jika gaji karyawan lebih kecil dari gaji UMR
+ print ("Gaji belum UMR") --|
